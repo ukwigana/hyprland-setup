@@ -70,6 +70,27 @@ Here are some screenshots of my current Hyprland setup:
 
 ![Screenshot 1](screenshots/screenshot1.png)
 
+## Credits / Acknowledgements
+
+This setup wouldn't have been possible without the amazing work of the following people and resources. I would like to extend my gratitude to them:
+
+- **[Alexays/Waybar](https://github.com/Alexays/Waybar)**  
+  The configuration and inspiration for my status bar setup comes from the Waybar project. Thanks to Alexays for creating this powerful and customizable bar for Wayland!
+
+- **[SolDoesTech/HyprV4](https://github.com/SolDoesTech/HyprV4)**  
+  The HyprV4 repository provided useful insights and configuration examples for setting up my Hyprland environment. Special thanks to SolDoesTech for sharing their work!
+
+- **[Arch Wiki - Hyprland](https://wiki.archlinux.org/title/Hyprland)**  
+  The Arch Wiki article on Hyprland was invaluable in understanding the intricacies of configuring and using Hyprland on Arch-based systems. Highly recommend this resource to anyone starting with Hyprland.
+
+- **[Hyprland Wiki](https://wiki.hyprland.org)**  
+  The official Hyprland Wiki has been an essential reference, with helpful documentation and guides to configure and optimize Hyprland for Wayland users.
+
+- **[YouTube - Hyprland Setup Tutorial](https://youtube.com/watch?v=oUpvtCEGrxQ)**  
+  A fantastic YouTube tutorial that helped me get started with my Hyprland setup. Thanks to the creator for walking through the process and sharing the experience!
+  
+Feel free to check out these resources if you're looking for more information or different approaches to configuring Hyprland and Wayland environments.
+
 ## License
 
 This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
