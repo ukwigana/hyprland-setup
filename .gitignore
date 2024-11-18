@@ -1,0 +1,3 @@
+# .gitignore in your repository
+*.swp            # Exclude vim swap files
+*.bak            # Exclude backup files

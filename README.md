@@ -101,3 +101,52 @@ This repository is licensed under the MIT License. See the [LICENSE](LICENSE) fi
 - **License:** If you plan to make it public, consider choosing a license (e.g., MIT or GPL). The MIT license is the most permissive, while the GPL ensures derivative works remain open-source.
 
 This should provide a clean and helpful way to share your Hyprland setup with the community! Let me know if you need any help with specific configurations or more details.
+
+
+### Example of Adding Symlinks in the README
+In your README, you can mention that users can clone the repository, but to use your setup, they’ll need to create symlinks or run a setup script that does it for them.
+
+For example:
+
+```markdown
+## Setup
+
+After cloning this repository, run the following commands to create symbolic links to your actual configuration files:
+
+```bash
+ln -s ~/.config/hypr/hyprland.conf hyprland-setup/hyprland/hyprland.conf
+ln -s ~/.bashrc hyprland-setup/dotfiles/bashrc
+# Add other symlinks for the rest of the configuration files as needed
+```
+
+This will link your system's configuration files to this repository. Any changes you make to your system's configurations will automatically be reflected here.
+```
+
+Alternatively, you could create a `setup.sh` script to automate this process, which might look like:
+
+### Example `setup.sh` Script:
+
+```bash
+#!/bin/bash
+
+# Create symlinks
+ln -s ~/.config/hypr/hyprland.conf ./hyprland/hyprland.conf
+ln -s ~/.bashrc ./dotfiles/bashrc
+ln -s ~/.zshrc ./dotfiles/zshrc
+ln -s ~/.config/kitty/kitty.conf ./dotfiles/kitty.conf
+ln -s ~/.config/waybar/config.json ./dotfiles/waybar/config.json
+ln -s ~/.config/rofi/config.rasi ./dotfiles/rofi/config.rasi
+
+echo "Symlinks created successfully!"
+```
+
+You can run the script by simply executing:
+
+```bash
+bash setup.sh
+```
+
+This will create the necessary symlinks for the user.
+
+### Conclusion:
+By using symbolic links, you can keep your actual configuration files up-to-date without having to manually copy them each time. It makes your repository clean and ensures you’re always working with the latest version of your config files. Plus, it’s much easier to maintain and share!
